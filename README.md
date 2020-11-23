@@ -2,7 +2,7 @@
 
 <img src="https://img.shields.io/badge/Language-Python-brightgreen">
 
-Mininet network simulations with a Software-Defined Networks (SDN) Java-based Floodlight controller. Floodlight has a VM pre-configured with mininet, Open vSwitch, and Floodlight v1.1 ( https://floodlight.atlassian.net/wiki/spaces/floodlightcontroller/pages/8650780/Floodlight+VM ) <br /> The topology created in this repo is based on the figure `Topology` found below and in the `figures` directory.
+Mininet network simulations with a Software-Defined Networks (SDN) Java-based Floodlight controller. Floodlight has a VM pre-configured with mininet, Open vSwitch, and Floodlight v1.1. You may download it from here: https://floodlight.atlassian.net/wiki/spaces/floodlightcontroller/pages/8650780/Floodlight+VM. <br /> The topology created in this repo is based on the figure `Topology` found below and in the `figures` directory.
 
 <p align="center">
 <img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/Topology.png" width="400">
