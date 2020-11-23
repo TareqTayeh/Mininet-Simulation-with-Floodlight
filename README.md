@@ -7,11 +7,11 @@ Mininet network simulations with a Software-Defined Networks (SDN) Floodlight co
 </p>
 
 The Python code `Custom_topology_code.py` to create this topology is found under the `code` directoy. The command to run this `sudo mn --custom Custom_topology_code.py --topo=mytopo --controller=remote,ip=127.0.0.1,port=6653 --switch ovsk,protocols=OpenFlow13 --link=tc,bw=15,delay=1ms,loss=1`. <br />
---custom Assignment_4_topology_code.py: Runs the custom Mininet topology python code. <br />
---topo=mytopo: Topology name to be built and created. Name specified in my python code (last line). <br />
---controller=remote,ip=127.0.0.1,port=6653: Specifies the use of a remote controller with that IP address and port, which is Floodlight in our case. <br />
---switch ovsk,protocols=OpenFlow13: Specifies the use of the OVSKernel switch and OpenFlow v1.3 switch protocol. <br />
---link=tc,bw=15,delay=1ms,loss=1: Makes links TCLinks with every link having a bandwidth of 15Mpbs, delay of 1ms, and a packet loss of 1%. <br />
+`--custom Assignment_4_topology_code.py`: Runs the custom Mininet topology python code. <br />
+`--topo=mytopo`: Topology name to be built and created. Name specified in my python code (last line). <br />
+`--controller=remote,ip=127.0.0.1,port=6653`: Specifies the use of a remote controller with that IP address and port, which is Floodlight in our case. <br />
+`--switch ovsk,protocols=OpenFlow13`: Specifies the use of the OVSKernel switch and OpenFlow v1.3 switch protocol. <br />
+`--link=tc,bw=15,delay=1ms,loss=1`(OPTIONAL): Makes links TCLinks with every link having a bandwidth of 15Mpbs, delay of 1ms, and a packet loss of 1%. <br />
 
 ### Ping + iPerf
 The ping application, utilizing ICMP, can be used to test the sender-to-receiver connection between hosts. The iperf application can generate real-time traffic via TCP or UDP probe packets to collect statistical parameters. I utilized the ping and iperf commands on each host node separately when the network is created and is fully functional, after running `mininet> xterm hX hY`, where X and Y denotes the desired host numbers. <br /> <br />
