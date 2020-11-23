@@ -23,11 +23,11 @@ o Ping h7 (10.0.0.7) for 100 s (-w). Output and store results in Ping_Request_Re
 o Sniff and capture traffic received from h1 (10.0.0.1) <br />
 
 <p align="center">
-<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h1_h7_iperf.png" width="700">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h1_h7_iperf.png" width="800">
 </p>
 
 <p align="center">
-<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h7_iperf.png" width="700">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h7_iperf.png" width="800">
 </p>
 
 <br />
@@ -39,11 +39,11 @@ o Start the UDP (-u) client (-c) at h1 with server ip address (10.0.0.7) and por
 o Start the UDP (-u) server (-s) at h7 with port 5001 (-p). Also, monitor the results every one second (-i). Port 5001 is also the default one from Mininet. Output and store results in iPerf_UDP_Request_Results.txt file (| tee) <br />
 
 <p align="center">
-<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h1_h7_ping_commands.png" width="700">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h1_h7_ping_commands.png" width="800">
 </p>
 
 <p align="center">
-<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h1_h7_ping_tcdump.png" width="700">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h1_h7_ping_tcdump.png" width="800">
 </p>
 
 There are 2 code files under the code directory that can help with extracting the QoS metrics from those output files:
@@ -51,11 +51,11 @@ There are 2 code files under the code directory that can help with extracting th
 2. `iPerf_UDP_metrics_decode.py`: Extracts QoS metrics from the output file produced from a iperf UDP command.
 
 <p align="center">
-<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/Ping_QoS_metrics_decode_sample_output.png" width="700">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/Ping_QoS_metrics_decode_sample_output.png" width="800">
 </p>
 
 <p align="center">
-<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/iPerf_UDP_metrics_decode_sample_output.png" width="700">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/iPerf_UDP_metrics_decode_sample_output.png" width="800">
 </p>
 
 #Please ensure you end and delete the simulation when you are done by running `mininet> exit` followed by `sudo mn -c`
