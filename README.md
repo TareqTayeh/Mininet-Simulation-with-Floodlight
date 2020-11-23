@@ -1,6 +1,6 @@
 # Mininet + Floodlight
 
-<img src="https://img.shields.io/badge/VM-Floodlight-Blue>
+<img src="https://img.shields.io/badge/VM-Floodlight-Blue">
 
 Mininet network simulations with a Software-Defined Networks (SDN) Floodlight controller in a Floodlight VM. The topology created in this repo is based on the figure `Topology` found below and in the `figures` directory.
 
