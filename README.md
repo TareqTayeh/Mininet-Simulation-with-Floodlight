@@ -1,17 +1,17 @@
 # Mininet + Floodlight
 
-Mininet network simulations with a Software-Defined Networks (SDN) Floodlight controller in a Floodlight VM. The topology created is based on the figure “Topology“ found below and in the figures directory.
+Mininet network simulations with a Software-Defined Networks (SDN) Floodlight controller in a Floodlight VM. The topology created is based on the figure `Topology` found below and in the figures directory.
 
 <p align="center">
 <img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/Topology.png" width="400">
 </p>
 
 The ping application, utilizing ICMP, can be used to test the sender-to-receiver connection between hosts. The iperf application can generate real-time traffic via TCP or UDP probe packets to collect statistical parameters. There are 3 code files under the code directory:
-1. “Custom_topology_code.py“: Creates the Mininet topolgy with the Floodlight controller.
-2. “Ping_QoS_metrics_decode.py“: Extracts QoS metrics from the output file produced from a ping command.
-3. “iPerf_UDP_metrics_decode.py“: Extracts QoS metrics from the output file produced from a iperf UDP command.
+1. `Custom_topology_code.py`: Creates the Mininet topolgy with the Floodlight controller.
+2. `Ping_QoS_metrics_decode.py`: Extracts QoS metrics from the output file produced from a ping command.
+3. `iPerf_UDP_metrics_decode.py`: Extracts QoS metrics from the output file produced from a iperf UDP command.
 
-I utilized the ping and iperf commands on each host node separately, after running “mininet> xterm hX hY“, where X and Y denotes the desired host numbers. <br />
+I utilized the ping and iperf commands on each host node separately, after running `mininet> xterm hX hY`, where X and Y denotes the desired host numbers. <br /> <br />
 Ping Example: <br />
 • H1: ping -w 100 10.0.0.7 | tee Ping_Request_Results.txt <br />
 o Ping h7 (10.0.0.7) for 100 s (-w). Output and store results in Ping_Request_Results.txt file (| tee) <br />
