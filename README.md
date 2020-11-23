@@ -1,20 +1,24 @@
 # Mininet + Floodlight
 
-Mininet network simulations with a Software-Defined Networks (SDN) Floodlight controller in a Floodlight VM. The topology created is based on the figure `Topology` found below and in the `figures` directory. The Python code `Custom_topology_code.py` to create this is found under the `code` directoy.
+Mininet network simulations with a Software-Defined Networks (SDN) Floodlight controller in a Floodlight VM. The topology created in this repo is based on the figure `Topology` found below and in the `figures` directory.
 
 <p align="center">
 <img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/Topology.png" width="400">
 </p>
 
+The Python code `Custom_topology_code.py` to create this topology is found under the `code` directoy.
+
 ### Ping + iPerf
-The ping application, utilizing ICMP, can be used to test the sender-to-receiver connection between hosts. The iperf application can generate real-time traffic via TCP or UDP probe packets to collect statistical parameters. I utilized the ping and iperf commands on each host node separately, after running `mininet> xterm hX hY`, where X and Y denotes the desired host numbers. <br /> <br />
+The ping application, utilizing ICMP, can be used to test the sender-to-receiver connection between hosts. The iperf application can generate real-time traffic via TCP or UDP probe packets to collect statistical parameters. I utilized the ping and iperf commands on each host node separately when the network is created and is fully functional, after running `mininet> xterm hX hY`, where X and Y denotes the desired host numbers. <br /> <br />
 Ping Example: <br />
+h1 will ping h7, and h7 will tcdump. tcpdump is a unix command-line tool for packet sniffing and capturing, we will use it to capture traffic in the emulated network for stats and verification. <br />
 • H1: ping -w 100 10.0.0.7 | tee Ping_Request_Results.txt <br />
 o Ping h7 (10.0.0.7) for 100 s (-w). Output and store results in Ping_Request_Results.txt file (| tee) <br />
 • H7: tcpdump host 10.0.0.1 <br />
 o Sniff and capture traffic received from h1 (10.0.0.1) <br />
 <br />
 iPerf Example: <br />
+H1 will act as the client, and H7 will act as the server. <br />
 • H1: iperf -c 10.0.0.7 -p 5001 -u -b 6m -t 100 <br />
 o Start the UDP (-u) client (-c) at h1 with server ip address (10.0.0.7) and port (-p). Also, set the transmission duration (-t) to 100 seconds and bandwidth to 6Mbps (-b) <br />
 • H7: iperf -s -p 5001 -u -i 1 | tee iPerf_UDP_Request_Results.txt <br />
