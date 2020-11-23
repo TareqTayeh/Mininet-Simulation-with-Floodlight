@@ -6,7 +6,7 @@ Mininet network simulations with a Software-Defined Networks (SDN) Floodlight co
 <img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/Topology.png" width="400">
 </p>
 
-The Python code `Custom_topology_code.py` to create this topology is found under the `code` directoy. The command to run this `sudo mn --custom Custom_topology_code.py --topo=mytopo --controller=remote,ip=127.0.0.1,port=6653 --switch ovsk,protocols=OpenFlow13 --link=tc,bw=15,delay=1ms,loss=1`. <br />
+The Python code `Custom_topology_code.py` to create this topology is found under the `code` directoy. The command to run this `sudo mn --custom Custom_topology_code.py --topo=mytopo --controller=remote,ip=127.0.0.1,port=6653 --switch ovsk,protocols=OpenFlow13 --link=tc,bw=15,delay=1ms,loss=1`. <br /> <br />
 `--custom Assignment_4_topology_code.py`: Runs the custom Mininet topology python code. <br />
 `--topo=mytopo`: Topology name to be built and created. Name specified in my python code (last line). <br />
 `--controller=remote,ip=127.0.0.1,port=6653`: Specifies the use of a remote controller with that IP address and port, which is Floodlight in our case. <br />
