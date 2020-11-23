@@ -1,6 +1,6 @@
 # Mininet + Floodlight
 
-<img src="https://img.shields.io/badge/VM-Floodlight-blue">
+<img src="https://img.shields.io/badge/VM-Floodlight-green">
 
 Mininet network simulations with a Software-Defined Networks (SDN) Floodlight controller. Floodlight has a VM pre-configured with mininet, Open vSwitch, and Floodlight v1.1. You may download it from here: https://floodlight.atlassian.net/wiki/spaces/floodlightcontroller/pages/8650780/Floodlight+VM The topology created in this repo is based on the figure `Topology` found below and in the `figures` directory.
 
