@@ -21,6 +21,15 @@ h1 will ping h7, and h7 will tcdump. tcpdump is a unix command-line tool for pac
 o Ping h7 (10.0.0.7) for 100 s (-w). Output and store results in Ping_Request_Results.txt file (| tee) <br />
 • H7: tcpdump host 10.0.0.1 <br />
 o Sniff and capture traffic received from h1 (10.0.0.1) <br />
+
+<p align="center">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h1_h7_iperf.png" width="400">
+</p>
+
+<p align="center">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h7_iperf.png" width="400">
+</p>
+
 <br />
 iPerf Example: <br />
 H1 will act as the client, and H7 will act as the server. <br />
@@ -29,6 +38,24 @@ o Start the UDP (-u) client (-c) at h1 with server ip address (10.0.0.7) and por
 • H7: iperf -s -p 5001 -u -i 1 | tee iPerf_UDP_Request_Results.txt <br />
 o Start the UDP (-u) server (-s) at h7 with port 5001 (-p). Also, monitor the results every one second (-i). Port 5001 is also the default one from Mininet. Output and store results in iPerf_UDP_Request_Results.txt file (| tee) <br />
 
+<p align="center">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h1_h7_ping_commands.png" width="400">
+</p>
+
+<p align="center">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/h1_h7_tcdump.png" width="400">
+</p>
+
 There are 2 code files under the code directory that can help with extracting the QoS metrics from those output files:
 1. `Ping_QoS_metrics_decode.py`: Extracts QoS metrics from the output file produced from a ping command.
 2. `iPerf_UDP_metrics_decode.py`: Extracts QoS metrics from the output file produced from a iperf UDP command.
+
+<p align="center">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/Ping_QoS_metrics_decode_sample_output.png" width="400">
+</p>
+
+<p align="center">
+<img src="https://github.com/TareqTayeh/Mininet-Simulation-with-Floodlight/blob/master/figures/iPerf_UDP_metrics_decode_sample_output.png" width="400">
+</p>
+
+#Please ensure you end and delete the simulation when you are done by running `mininet> exit` followed by `sudo mn -c`
