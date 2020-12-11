@@ -3,6 +3,7 @@
 <p float="left">
  <img src="https://img.shields.io/badge/Floodlight-v1.1-brightgreen"/>
  <img src="https://img.shields.io/badge/Mininet-v2.2.1-blue"/>
+ <img src="https://img.shields.io/badge/Python-v2.7.6-yellow"/>
  <img src="https://img.shields.io/badge/Java-v7-red"/>
 </p>
  
