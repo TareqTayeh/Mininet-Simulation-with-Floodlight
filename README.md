@@ -1,8 +1,10 @@
 # Mininet + Floodlight
 
-<img src="https://img.shields.io/badge/Floodlight-v1.1-brightgreen">
-<img src="https://img.shields.io/badge/Mininet-v2.2.1-blue">
-<img src="https://img.shields.io/badge/Java-v7-red">
+<p float="left">
+ <img src="https://img.shields.io/badge/Floodlight-v1.1-brightgreen"/>
+ <img src="https://img.shields.io/badge/Mininet-v2.2.1-blue"/>
+ <img src="https://img.shields.io/badge/Java-v7-red"/>
+</p>
  
 
 Mininet network simulations with a Software-Defined Networks (SDN) Java-based Floodlight controller. Floodlight has a VM pre-configured with Mininet, Open vSwitch, and Floodlight v1.1. You may download it from here: https://floodlight.atlassian.net/wiki/spaces/floodlightcontroller/pages/8650780/Floodlight+VM. <br /> The topology created in this repo is based on the figure `Topology` found below and in the `figures` directory.
